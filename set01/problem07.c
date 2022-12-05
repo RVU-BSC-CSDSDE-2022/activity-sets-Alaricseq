@@ -22,7 +22,8 @@ int main()
 {
   int n, sum;
   n = input_n();
-  sum_n_nos(n);
+  sum=sum_n_nos(n);
+  output(n,sum)
   return 0;
 }
 
@@ -41,7 +42,7 @@ int sum_n_nos(int n)
   {
     sum += i;
   }
-  output(n,sum);
+  return sum;
 }
 
 void output(int n, int sum)

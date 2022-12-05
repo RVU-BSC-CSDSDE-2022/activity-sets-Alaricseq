@@ -28,10 +28,12 @@ int main()
 }
 int input()
 {
-  int a ,b, c;
+  int a ,b, c , largest;
   printf("Enter 3 numbers:");
   scanf("%d%d%d", &a,&b,&c);
-  compare(a,b,c);
+  largest=compare(a,b,c);
+  output(a,b,c,largest);
+  
 }
 int compare(int a , int b, int c)
 {
@@ -42,7 +44,8 @@ int compare(int a , int b, int c)
     largest=b;
   else 
     largest=c;
-  output(a,b,c,largest);
+  
+  return largest;
 }
 void output(int a, int b, int c, int largest)
 {
