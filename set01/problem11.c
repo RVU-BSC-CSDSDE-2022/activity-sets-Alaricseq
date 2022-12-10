@@ -11,24 +11,27 @@ void output(Complex a, Complex b, Complex sum);
 
 int main()
 {
-  struct complex a,b,sum;
-  input_complex()
+  Complex a,b,sum;
+  input_complex();
+  sum=add_complex(a,b);
+  output();
+  
 }
 
 Complex input_complex()
 {
-   Complex a,b;
-  printf("Enter a and b where a + ib is the First complex number.\n")
+  Complex a,b;
+  printf("Enter a and b where a + ib is the First complex number.\n");
   scanf("%d%d",&a.real,&a.img);
   printf("Enter c and d where c + id is the Second complex number.\n");
   scanf("%d%d",&b.real,&b.img);
-  return a;
 }
 Complex add_complex(Complex a, Complex b)
 {
-  struct complex a,b,sum;
+  Complex sum;
   sum.real=a.real + b.real;
   sum.img=a.img + b.img;
+  return sum;
 }
 void output(Complex a, Complex b, Complex sum);
 {
