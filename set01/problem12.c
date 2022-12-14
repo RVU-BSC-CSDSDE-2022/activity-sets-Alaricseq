@@ -14,12 +14,12 @@ void output(int n, Complex c[n], Complex result);
 int main()
 {
   int n;
-  Complex result={0,0};
   n=get_n();
   Complex c[n];
   input_n_complex(n,c);
-  result=add_n_complex(n,c);
+  Complex result=add_n_complex(n,c);
   output(n,c,result);
+  return 0;
 }
 
 int get_n()
@@ -32,9 +32,10 @@ int get_n()
 
 Complex input_complex()
 {
-  Complex c1;
+  Complex c;
   printf("Enter the real and imaginary number.\n");
-  scanf("%f%f",&c1.real,&c1.imaginary);
+  scanf("%f%f",&c.real,&c.imaginary);
+  return c;
 }
 
 void input_n_complex(int n, Complex c[n])
@@ -54,18 +55,18 @@ Complex add(Complex a, Complex b)
 }
 Complex add_n_complex(int n, Complex c[n])
 {
-  Complex sum={0,0};
+  Complex result={0,0};
   for (int i=0 ; i<n ; i++)
     {
-      c[i]=add(sum,c[i]);
+      result=add(result,c[i]);
     }
+  return result;
 }
 void output(int n, Complex c[n], Complex result)
 {
-  for (int i=0 ; i<n-1 ;i++)
+  for (int i=0 ; i<n ;i++)
     {
-      printf("%d %d + ",(int)c[i].real,(int)c[i].imaginary);
+      printf("%.f+%.fi ",c[i].real,c[i].imaginary);
     }
-  printf("%d+%d ",(int)c[n-1].real,(int)c[n-1].imaginary);
-  printf(" is %d+%di", (int)result.real,(int)result.imaginary);
+  printf(" is %.f+%.fi \n", result.real,result.imaginary);
 }
