@@ -4,21 +4,25 @@ void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
 int main()
 {
-  input();
+  int a,b,sum;
+  printf("Enter the numbers\n");
+  a=input();
+  b=input();
+  add(a,b,&sum);
+  output(a,b,sum);
+  return 0;
 }
 
 int input() 
 {
-  int a, b, sum;
-  printf("Enter two numbers");
-  scanf("%d%d", &a, &b);
-  add(a, b, &sum);
+  int n;
+  scanf("%d", &n);
+  return n;
 }
 
 void add(int a, int b, int *sum) 
 {
   *sum = a + b;
-  output(a, b, *sum);
 }
 
 void output(int a, int b, int sum) 
