@@ -16,7 +16,7 @@ int main()
 int input() 
 {
   int n;
-  scanf("%d", &n);
+  if(scanf("%d", &n));
   return n;
 }
 

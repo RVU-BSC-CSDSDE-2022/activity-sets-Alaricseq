@@ -1,53 +1,36 @@
-// #include <stdio.h>
-// int main()
-// {
-//   int a ,b, c;
-//   printf("Enter 3 numbers:");
-//   scanf("%d%d%d", &a,&b,&c);
-
-//   int res = largest(a,b,c);
-//   printf("Largest number %d",res);
-// }
-// int largest(int x , int y, int z)
-// {
-//   if (x >=y && x >= z)
-//     return x;
-//   else if (y >=z && y >= z)
-//     return y;
-//   else 
-//     return z;
-  
-// }
 #include <stdio.h>
 int input();
 int compare(int a, int b, int c);
 void output(int a, int b, int c, int largest);
+
 int main()
 {
-  input();
-}
-int input()
-{
-  int a ,b, c , largest;
-  printf("Enter 3 numbers:");
-  scanf("%d%d%d", &a,&b,&c);
+  int a,b,c,largest;
+  printf("Enter the number");
+  a=input();
+  b=input();
+  c=input();
   largest=compare(a,b,c);
   output(a,b,c,largest);
-  
+  return 0; 
 }
-int compare(int a , int b, int c)
+
+int input()
 {
-  int largest; 
-  if (a >=b && a >= c)
-    largest=a;
-  else if (b >=a && b >= c)
-    largest=b;
-  else 
-    largest=c;
-  
-  return largest;
+  int n;
+  if(scanf("%d",&n));
+  return n;
+}
+
+int compare(int a, int b, int c)
+{
+  if(a>b && b>a)
+    return a;
+  if(b>c)
+    return b;
+  return c;
 }
 void output(int a, int b, int c, int largest)
 {
-  printf("The Largest %d , %d and %d  is %d ",a,b,c,largest);
+  printf("The largrest of %d,%d,%d is %d",a,b,c,largest);
 }

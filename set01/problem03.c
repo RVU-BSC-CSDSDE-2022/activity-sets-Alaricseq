@@ -10,7 +10,7 @@ int input()
 {
   int a ,b;
   printf("Enter two numbers");
-  scanf("%d%d",&a,&b);
+  if(scanf("%d%d",&a,&b));
   add(a,b);
 }
 
