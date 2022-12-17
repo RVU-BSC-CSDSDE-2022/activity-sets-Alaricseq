@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 typedef struct _triangle {
 	float base, altitude, area;
 } Triangle;
@@ -64,6 +64,7 @@ Triangle find_smallest_triangle(int n, Triangle t[n])
           smallest.area=t[i].area;
         }
     }
+  return smallest;
 }
 
 void output(int n, Triangle t[n], Triangle smallest)
