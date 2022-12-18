@@ -31,7 +31,7 @@ int input_n()
 {
   int num;
   printf("Enter the number");
-  scanf("%d",&num);
+  if(scanf("%d",&num));
   return num;
 }
 
