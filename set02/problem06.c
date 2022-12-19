@@ -23,5 +23,5 @@ void str_reverse(char *str, char *rev_str)
 
 void output(char *a, char *reverse_a)
 {
-    
+    printf("The reverse the number is :",a,reverse_a);
 }
