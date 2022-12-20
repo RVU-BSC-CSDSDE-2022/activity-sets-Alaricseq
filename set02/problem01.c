@@ -13,7 +13,7 @@ void input(float base,float height)
 {
   float area;
   printf("Enter base and height");
-  scanf("%f%f",&base,&height);
+  if(scanf("%f%f",&base,&height));
   find_area(base,height,&area);
 }
 

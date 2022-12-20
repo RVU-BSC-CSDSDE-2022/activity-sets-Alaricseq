@@ -14,7 +14,7 @@ float input()
 {
   double n;
   printf("Enter the number ");
-  scanf("%lf",&n);
+  if(scanf("%lf",&n));
   return n;
 }
 float square_root(float n)

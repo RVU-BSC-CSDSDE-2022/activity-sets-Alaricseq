@@ -17,7 +17,7 @@ int input_side()
 {
   int n;
   printf("Enter number of sides");
-  scanf("%d",&n);
+  if(scanf("%d",&n));
   return n;
 }
 

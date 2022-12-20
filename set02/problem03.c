@@ -15,7 +15,7 @@ int input_number()
 {
   int n;
   printf("Enter the number:\n");
-  scanf("%d",&n);
+  if(scanf("%d",&n));
   return n;
 }
 

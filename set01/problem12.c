@@ -26,7 +26,7 @@ int get_n()
 {
   int n;
   printf("Enter the number of the array.\n");
-  scanf("%d",&n);
+  if(scanf("%d",&n));
   return n;
 }
 

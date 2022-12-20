@@ -25,7 +25,7 @@ int main()
 Complex input_complex()
 {
   Complex c1;
-  scanf("%f%f",&c1.real,&c1.imaginary);
+  if(scanf("%f%f",&c1.real,&c1.imaginary));
   return c1;
 }
 Complex add_complex(Complex a, Complex b)
