@@ -1,6 +1,9 @@
 #include <stdio.h>
 int main()
 {
-  printf("Name : Alaric Sequeira");
-return 0;
+  char name[20];
+  printf("Enter Your Name: ");
+  if(scanf("%s",name));
+  printf("Your name is : %s",name);
+  return 0;
 }

@@ -13,7 +13,7 @@ int main()
 float input()
 {
   double n;
-  printf("Enter the number ");
+  printf("Enter the number: ");
   if(scanf("%lf",&n));
   return n;
 }
