@@ -5,7 +5,11 @@ void output(int n, int fibo);
 
 int main()
 {
-  
+  int n,fibo;
+  n=input();
+  fibo=find_fibo(n);
+  ouput(n,fibo);
+  return0;  
 }
 int input()
 {
