@@ -12,15 +12,17 @@ int main()
 void input(float base, float height)
 {
   float area;
-  printf("Enter base and height of a triangle:");
+  printf("Enter base and height:");
   if(scanf("%f%f",&base,&height));
   find_area(base,height,&area);
 }
+
 void find_area(float base , float height, float *area)
 {
-  *area=(base*height)*1/2;
+  *area = (base*height)*1/2;
   output(base,height,*area);
 }
+
 void output(float base, float height, float area)
 {
   printf("The area of the traingle with base %f and height %f is %f",base,height,area);

@@ -21,22 +21,20 @@ int input()
 int find_fibo(int n)
 {
   int fibo;
-  if (n==1)
+  if (n==0)
   {
-    return 0;
+    fibo = 0;
   }
-  else if (n==2)
+  else if (n==1)
   {
-    return 1;
-  }
-  else if (n==3)
-  {
-    return 1;
+    fibo = 1;
   }
   else 
-    return find_fibo(n-1) + find_fibo(n-2);
+  {
+    fibo =find_fibo(n-1) + find_fibo(n-2);
+  }
 }
 void output(int n, int fibo)
 {
-  printf("fibo(%d) = %d",n,fibo);
+  printf("fibo(%d) = %d\n",n,fibo);
 }
