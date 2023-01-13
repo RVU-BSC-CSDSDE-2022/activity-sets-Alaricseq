@@ -21,8 +21,8 @@ int input_number()
 }
 int is_prime(int n)
 {
-  int count;
-  for(int i=0; i<n ;i++)
+  int count=0;
+  for(int i=1; i<n ;i++)
     if(n%i == 0)
     {
        count++;
@@ -36,7 +36,7 @@ int is_prime(int n)
 void output(int n, int result)
 {
   if(result==1)
-    printf("%d is Prime number\n",n);
+    printf("%d is not Prime number\n",n);
   else
-    printf("%d is not a Prime number\n",n);
+    printf("%d is a Prime number\n",n);
 }
