@@ -5,18 +5,18 @@ void output(int a, int b, int gcd);
 
 int main()
 {
-  printf("Enter two numbers:\n");
   int a,b,gcd;
   a=input();
-  b=input();
+  a=input();
   gcd=find_gcd(a,b);
   output(a,b,gcd);
   return 0;
 }
 
-int input()
+int input();
 {
   int n;
+  printf("Enter the numbers: ");
   if(scanf("%d",&n));
   return n;
 }
@@ -24,9 +24,9 @@ int input()
 int find_gcd(int a, int b)
 {
   int gcd;
-  for (int i=1 ; i<=a && i<=b ;i++)
+  for( int i=1 ; i<=a && i<=b ; i++)
     {
-      if (a%i==0 && b%i==0)
+      if(a%i==0 && b%i==0)
         gcd = i;
     }
   return gcd;

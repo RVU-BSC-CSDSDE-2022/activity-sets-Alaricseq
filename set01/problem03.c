@@ -2,25 +2,33 @@
 int input();
 int add(int a , int b);
 void output(int a , int b , int sum);
+
 int main()
 {
-   input();
-}
-int input()
-{
-  int a ,b;
-  printf("Enter two numbers");
-  if(scanf("%d%d",&a,&b));
-  add(a,b);
+  int a,b,sum;
+  a=input();
+  b=input();
+  sum=add(a,b);
+  output(a,b,sum);
+  return 0;
 }
 
-int add(int a,int b)
+int input()
+{
+  int n;
+  printf("Enter the number:\n");
+  if(scanf("%d",&n));
+  return n;
+}
+
+int add(int a , int b)
 {
   int sum=0;
-  sum=a + b;
-  output(a,b,sum);
+  sum = a+b;
+  return sum;
 }
+
 void output(int a , int b , int sum)
 {
-  printf("The sum of out %d and %d  is %d ",a,b,sum);
+  printf("The sum of %d and %d is %d\n",a,b,sum);
 }
