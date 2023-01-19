@@ -6,7 +6,10 @@ void output(float n, float sqrroot);
 
 int main()
 {
-  
+  double n,sqrroot;
+  n=input();
+  sqrroot=square_root(n);
+  output(n,sqrroot);
 }
 
 float input()
