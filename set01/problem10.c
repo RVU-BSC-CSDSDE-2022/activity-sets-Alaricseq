@@ -48,5 +48,12 @@ int stringcompare(char *string1, char *string2)
 
 void output(char *string1, char *string2, int result)
 {
+  if(var==1) 
+  {printf("First string %s is greater than the second string %s\n",string1,string2);}
+  else if(var==-1)
+  {printf("Second string %s is greater than the first string %s\n",string2,string1);}
+  return 0;
+  int result = stringcompare(string1,string2);
+  output(string1,string2,result);
   printf("The output is %d",result);
 }
