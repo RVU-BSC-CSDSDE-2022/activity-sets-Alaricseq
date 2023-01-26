@@ -20,7 +20,7 @@ void input_string(char *a)
 
 void str_reverse(char *str, char *rev_str)
 {
-  int i=0,j=0,k;
+  int i=0,j=0,k=0;
   while(1)
     {
       if(str[i]!='\0')
@@ -31,7 +31,7 @@ void str_reverse(char *str, char *rev_str)
       i++;
     }
 
-  for(j=0 ; j<i ; j++)
+  for(i=j ; i>=0 ; i--)
     {
       rev_str[k]=str[i];
       k++;

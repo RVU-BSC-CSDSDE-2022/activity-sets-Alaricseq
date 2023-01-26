@@ -22,7 +22,7 @@ The distance between point (1.0000000, 1.0000000) and (2.0000000, 2.0000000) is 
 
 ---
 
-2. Write a program to find whether the given 3 points form a triangle
+2. 11
 
 ***Function Declarations***
 ```c

@@ -2,7 +2,7 @@
 int main()
 {
   char name[20];
-  printf("Enter Your Name: ");
+  printf("Enter your name: ");
   if(scanf("%s",name));
   printf("Your name is : %s",name);
   return 0;
