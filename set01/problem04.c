@@ -2,30 +2,31 @@
 int input();
 void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
+
 int main()
 {
   int a,b,sum;
-  printf("Enter the numbers\n");
+  printf("Enter 2 numbers: ");
   a=input();
   b=input();
   add(a,b,&sum);
   output(a,b,sum);
-  return 0;
+  return 0;	
 }
 
-int input() 
+int input()
 {
-  int n;
-  if(scanf("%d", &n));
-  return n;
+	int n;
+	if(scanf("%d",&n));
+	return n;
 }
 
-void add(int a, int b, int *sum) 
+void add(int a, int b, int *sum)
 {
-  *sum = a + b;
+	*sum = a + b;
 }
 
-void output(int a, int b, int sum) 
+void output(int a, int b, int sum)
 {
-  printf("The sum of out %d and %d  is %d ", a, b, sum);
-}  
+	printf("The sum of the %d and %d is %d\n",a,b,sum);
+}
