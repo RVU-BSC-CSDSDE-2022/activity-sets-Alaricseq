@@ -10,7 +10,7 @@ int main()
 	result=is_composite(n);
 	output(n,result);
 	return 0;
-}	
+}
 
 int input_number()
 {
